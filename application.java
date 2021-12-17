@@ -20,14 +20,15 @@ public class CallingMethodsInSameClass
 		printOne();
 		printOne();
 	}
-	#new changes for feature 301 by akash
-}
-public static void moreParameters(int a, int b)
-	{	System.out.println("in method moreParameters. a: " + a + " b: " + b);
-		a = a * b;
-		b = 12;
-		System.out.println("in method moreParameters. a: " + a + " b: " + b);
-		falseSwap(b,a);
-		System.out.println("in method moreParameters. a: " + a + " b: " + b);	
+	#new changes for feature 302 by chaitanya
+
+    public static void go()
+	{	int x = 3;
+		int y = 2;
+		System.out.println("In method go. x: " + x + " y: " + y);
+		falseSwap(x,y);
+		System.out.println("in method go. x: " + x + " y: " + y);
+		moreParameters(x,y);
+		System.out.println("in method go. x: " + x + " y: " + y);
 	}
-}
+	
